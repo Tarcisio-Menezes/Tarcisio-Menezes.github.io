@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Currículos bacanudos </title>
+    <link rel="stylesheet" href="bulma/bulma.min.css">
+    <link rel="stylesheet" href="bulma/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+</head>
+
+<body>
+
+<script type='text/javascript' src="script.js" async> </script>
+
+<header> 
+    <h1 class="title is-1" >Formulário para cadastro de currículos</h1>
+    <p class="subtitle">Cadastre seu currículo em nossa plataforma</p>
+</header>
+
+<br>
+
+<form action="" method="GET" enctype="multipart/form-data">
+    
+
+<div class="field"> 
+<label for="fullName" class="label"> Nome completo: </label>
+<div class="control"> 
+<input type="text" id='fullName' placeholder='Insira seu nome' data-validate-field="name">
+</div>
+</div>
+
+<div class="field">
+<label for="eMail" class="label"> E-mail: </label>
+<div class="control">
+<input type="email" id="eMail" placeholder="Insira seu e-mail" data-validate-field="email">
+</div>
+</div>
+
+<div class="field">
+<label for="cpf" class="label"> CPF: </label>
+<div class="control">
+<input type="text" id="cpf" placeholder="Insira apenas números" required maxlength="11">
+</div>
+</div>
+
+<div class="field">
+<label for="end" class="label"> Endereço: </label>
+<div class="control">
+<input type="text" id='end' placeholder="Insira seu endereço" data-validate-field="text">    
+</div>
+</div>
+
+
+<div class="field">
+<label for="cidade" class="label"> Cidade: </label>
+<div class="control">
+<input type="text" id='cidade' placeholder="Insira sua cidade" data-validate-field="text">
+</div>
+</div>
+
+<div class="field">
+<p>Tipo:</p>
+<div class="control">
+<label class="radio"> 
+<input type="radio" id='casa' name='tipo' data-validate-field="radio">
+Casa
+</label>
+<label class="radio">
+<input type="radio" id='apartamento' name='tipo' data-validate-field="radio">
+Apartamento
+</label>
+</div>
+</div>
+
+<div class="field">
+<div class="control">
+<div class="select">
+<select id='estado' required> 
+<option> Selecione seu estado </option> 
+</select>  
+</div>
+</div>
+</div>
+
+
+<div class="field">
+Resumo do currículo:
+<div class="control is-medium is-loading" >
+<textarea type="text" id='resCurriculo' class="textarea has-fixed-size textarea is-hovered" data-validate-field="text"> </textarea>
+</div>
+</div>
+
+<div class="field">
+Cargo:
+<div class="control is-medium is-loading">
+<textarea type='text' id="cargo" class="textarea has-fixed-size textarea is-hovered" data-validate-field="text"> </textarea>
+</div>
+</div>
+
+<div class="field">
+Descrição do cargo:
+<div class="control is-medium is-loading">
+<textarea id="descCargo" class="textarea has-fixed-size textarea is-hovered" data-validate-field="text"> </textarea>
+</div>
+</div>
+
+<label for(dataInicio)> <p>Data de início:</p>
+<input type="text" id="datepicker" required>
+</label>
+
+<br> <br>
+
+<div class="buttons">
+<button type="submit" id='submit' class="button is-success"> Enviar </button>
+<button type="reset" id ='clear' class="button is-danger"> Limpar </button>
+</div>
+
+</form>
+
+<br>
+
+<div id="infos">
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+
+<script>
+    var picker = new Pikaday({ field: document.getElementById('datepicker') });
+</script>
+
+<script type="text/javascript" src="just-validate.js"> </script>
+
+</body>
+
+</html>
