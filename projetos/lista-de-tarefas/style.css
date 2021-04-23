@@ -8,6 +8,7 @@
 
 #texto-tarefa {
   width: 550px;
+  display: flex;
   font-size: 25px;
   margin: 0 auto;
 }
@@ -47,6 +48,7 @@ ol li {
   font-family: 'New Tegomin', serif;
   margin: 0 auto;
   font-size: 25px;
+  
 }
 
 ol {
@@ -60,8 +62,6 @@ button {
   font-size: 15px;
   padding: 0.2%;
   margin: 0.5%;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 button:hover {
@@ -90,7 +90,6 @@ footer:active {
 #news {
   margin-left: auto;
   margin-right: 8%;
-  display: inline-block;
   background-color: rgba(255, 127, 80, 0.586);
   border-style:solid;
   border-color: black;
@@ -111,4 +110,66 @@ footer:active {
 .news:active {
   font-size: 16px;
   color: darkgreen;
+}
+
+#browser {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2%;
+  margin-left: 4%;
+}
+
+#general-buttons {
+  margin-left: 4%;
+}
+
+@media screen and (max-width: 680px) {
+  #title {
+    font-size: 50px;
+    margin: auto;
+  }
+
+  #funcionamento {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  #news {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex-basis: 30px;
+    margin-left: 5%;
+    margin-right: 2%;
+  }
+
+  #texto-tarefa {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  #lista-tarefas {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin-right: 2%;
+    margin-left: 2%;
+    font-size: 20px;
+    text-align: justify;
+  }
+  
+  #main {
+    margin: auto;
+  }
+ 
+  #browser, #general-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3%;
+    justify-content: center;
+  }
+
+  button {
+    margin: 2%;
+  }
 }
