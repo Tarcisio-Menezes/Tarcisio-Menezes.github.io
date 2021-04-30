@@ -190,3 +190,78 @@ footer {
 .cont {
   border-style: solid;
 }
+
+@media screen and (max-width: 680px) {
+  
+  #trybewarts-header-title {
+    display: none;
+  }
+
+  .trybewarts-header-logo {
+    display: none;
+  }
+  
+  .trybewarts-login {
+    width: auto;
+    margin: auto;
+  }
+
+  .trybewarts-login input {
+    justify-content: flex-start;
+  }
+
+  #submit-button {
+    width: 50px;
+    padding: 5%;   
+  }
+  
+  #login {
+    width: 160px;
+  }
+
+  #pass {
+    width: 68px;
+  }
+
+  #evaluation-form {
+    flex-wrap: wrap;
+    width: auto;
+    padding: 3%;
+  }
+  
+  #title1 {
+    align-self: center;
+    font-size: 50px;
+  }
+
+  .title-forms {
+    justify-content: center;
+  }
+
+  .title-cotainer {
+    flex-basis: auto;
+  }
+
+  .inline-family-section {
+    flex-direction: column;
+  }
+
+  .radioAvaliator {
+    flex-direction: column;
+ }
+
+ .section-form {
+   flex-direction: column;
+ }
+
+ .image-section {
+   display: flex;
+   align-self: center;
+   width: 200px;
+ }
+
+ #trybewarts-forms-logo {
+   margin-top: auto;
+   height: 200px;
+ }
+}
