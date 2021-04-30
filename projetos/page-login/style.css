@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: large;
+}
+
+header {
+  display: flex;
+  background-color: rgb(50, 167, 145);
+  width: auto;
+  justify-content: space-between;
+  flex: column nowrap;
+}
+
+#trybewarts-header-title {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  justify-items: center;
+  font-size: 35px;
+  color: white;
+  margin-top: 20px;
+}
+
+.trybewarts-header-logo {
+  display: flex;
+  width: 100px;
+}
+
+.title {
+  justify-content: center;
+}
+
+.trybewarts-login {
+  display: flex;
+  align-self: center;
+  justify-content: end;
+}
+
+.control {
+  display: flex;
+  padding: 10px;
+}
+
+.trybewarts-title {
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Section Center */
+#evaluation-form {
+  display: flex;
+  flex-direction: column;
+  width: 675px;
+}
+
+.trybewarts-form {
+  display: flex;
+  justify-content: center;
+  flex-basis: 50%;
+}
+
+.section-form {
+  display: flex;
+  flex: column wrap;
+  flex-basis: 100%;
+}
+
+#trybewarts-forms-logo {
+  display: flex;
+  align-content: center;
+  height: 800px;
+}
+
+.image-section {
+  display: flex;
+  flex-basis: 50%;
+}
+
+.image-section img {
+  display: flex;
+}
+
+.title-form {
+  padding: 3%;
+}
+
+.inline-name-and-lastname {
+  display: flex;
+  flex: row wrap;
+}
+
+.inline-houses-and-email-section {
+  display: flex;
+}
+
+.inline-family-section {
+  display: flex;
+  align-items: baseline;
+  align-content: center;
+}
+
+.lesson-ask {
+  display: flex;
+}
+
+#label-family {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#label-rate {
+  display: flex;
+  flex-direction: column;
+}
+
+.inline-family-section .control {
+  display: flex;
+  flex-direction: column;
+}
+
+.select {
+  display: flex;
+}
+
+.select p {
+  align-self: center;
+}
+
+.checkConteudo {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+}
+
+.agrupador-checks {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.radioAvaliator {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.radioAvaliator #label-rate {
+  display: flex;
+  align-self: center;
+}
+
+#label-infos {
+  padding: 2%;
+}
+
+.title-forms {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
+
+footer {
+  display: flex;
+  text-align: center;
+  height: 9.4vh;
+  justify-content: end;
+  align-items: flex-end;
+}
+
+.footerend p {
+  display: flex;
+  flex-basis: 100%;
+  justify-content: center;
+  background-color: gray;
+  color: black;
+}
+
+.radiobox:hover {
+  cursor: pointer;
+}
+
+.title-cotainer {
+  display: flex;
+  flex-basis: 50%;
+  justify-content: center;
+  padding: 80px 80px 40px 0;
+}
+
+.cont {
+  border-style: solid;
+}
